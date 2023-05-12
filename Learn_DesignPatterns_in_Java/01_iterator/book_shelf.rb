@@ -14,11 +14,11 @@ class BookShelf
   def append_book(book)
     raise ArgumentError unless book.is_a?(Book)
 
-    books.append(book)
+    @books.append(book)
   end
 
   def length
-    books.length
+    @books.length
   end
 
   def iterator

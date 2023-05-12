@@ -11,6 +11,7 @@ book_shelf.append_book(Book.new("Daddy-Long-Legs"))
 # 明示的にIteratorを使う
 it = book_shelf.iterator()
 
+# NOTE: book_shelfの実装に依存していないことがポイント。
 while it.has_next?
   book = it.next
   puts book.name
