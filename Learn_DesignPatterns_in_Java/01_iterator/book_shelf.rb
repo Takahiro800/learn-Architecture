@@ -1,6 +1,9 @@
+require_relative 'iterable'
 require_relative 'book'
 
 class BookShelf
+  include Iterable
+
   attr_accessor :books
 
   def initialize()

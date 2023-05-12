@@ -1,6 +1,9 @@
+require_relative 'iterator'
 require_relative 'book_shelf'
 
 class BookShelfIterator
+  include Iterator
+
   attr_accessor :index
   attr_reader :book_shelf
 
